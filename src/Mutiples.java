@@ -1,14 +1,14 @@
 public class Mutiples {
-    public static void main(String[] args) {
+    public static int mutiple(int n, int a, int b) {
         int j = 0;
-        for (int i = 1; i < 1000; i++) {
-            boolean db3 = i % 3 == 0;
-            boolean db5 = i % 5 == 0;
+        for (int i = 1; i < n; i++) {
+            boolean db3 = i % a == 0;
+            boolean db5 = i % b == 0;
 
             if (db3 || db5){
                 j++;
             }
         }
-        System.out.println(j);
+        return j;
     }
 }
